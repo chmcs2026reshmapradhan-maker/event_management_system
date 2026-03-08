@@ -14,7 +14,7 @@ app.use(express.json());
 
 connectDB();
 
-app.use("/api/events", eventRoutes);
+app.use("/events", eventRoutes);
 
 app.get("/", (req, res) => {
     res.send("Event Management Backend is running");
